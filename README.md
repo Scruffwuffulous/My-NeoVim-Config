@@ -6,3 +6,4 @@ So far we need:
 * luarocks
 * ripgrep
 * shark fd
+* figlet
