@@ -47,23 +47,19 @@ local FooterOut = RandomOut[2]
 
 return {
 {
-	  'nvimdev/dashboard-nvim',
-	  event = 'VimEnter',
- 	 config = function()
- 	   require('dashboard').setup {
-      			theme='doom',
+	'nvimdev/dashboard-nvim',
+	event = 'VimEnter',
+	config = function()
+	require('dashboard').setup {
+		theme='doom',
 
-      			disable_move=true,
- 		     	config = {
-				header=HeaderOut,
-				footer={FooterOut}
+		disable_move=true,
+		config = {
+			header=HeaderOut,
+			footer={FooterOut}
 			}
 		}	
-
 	end,
-  dependencies = { {'nvim-tree/nvim-web-devicons'}}
+	dependencies = { {'nvim-tree/nvim-web-devicons'}}
 }
 }
-
-
-
