@@ -14,7 +14,7 @@ end
 
 
 local function RandomQuoteAndSource()
-	QuoteFile = io.open('quotes', 'r')
+	QuoteFile = io.open("C:\\Users\\jtopo\\AppData\\Local\\nvim\\lua\\config\\plugins\\quotes", 'r')
 	QuoteTable = {}
 	for line in QuoteFile:lines() do
 		table.insert(QuoteTable, line)

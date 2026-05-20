@@ -16,7 +16,7 @@ require('telescope').setup{
 
 vim.wo.number = true
 vim.wo.relativenumber = true
-if (math(random(2) == 1)) then
+if (math.random(2) == 1) then
 	vim.cmd [[:colorscheme evergarden-spring]]
 else
 	vim.cmd [[:colorscheme NeoCyberVim]]
